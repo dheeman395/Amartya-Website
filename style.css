@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 35%,#1F4356,#071C26)
+}
+
+.menu_left{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu_right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.topdiv{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    line-height: 400%;
+    letter-spacing: 50%;
+}
+
+p{color: #ffffff;
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;}
+
+
+
+.botdiv{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+     max-width: 100%;
+}
+
+.svg{
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;}
+
+.active{
+    font-weight: 600;
+    color: aqua;
+}
+
+.ham{
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .menu_left{display: none;}
+    .menu_right{display: none;}
+
+     .topdiv {
+        position: relative;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ham {
+        display: block;
+        position: absolute;
+        left: 40px;
+        top: 40%;
+        height: 20px;
+    }
+
+    .svg {
+        height: 50px;
+
+}}
+
+@media (min-width: 601px) and (max-width:900px){
+.menu_left{display: none;}
+    .menu_right{display: none;}
+
+    .topdiv {
+        position: relative;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    .ham {
+        display: block;
+        position: absolute;
+        left: 40px;
+        top: 40%;
+        height: 20px;}
+    
+    .svg{height: 75%;}
+}}
+
+@media (min-width: 901px) and (max-width:1200px){
+    .menu_left{display: flex;}
+    .menu_right{display: flex;}
+
+    .ham{display: none;}
+
+    .topdiv{
+        width:93%;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: hidden;
+    justify-content: space-between;}
+    
+
+    .botdiv{
+        width:100%;
+        position: absolute;
+    }
+
+    .menu_left{
+        gap: 40px;
+    }
+
+    .menu_right{
+        gap: 40px;
+    }
+
+    .svg{
+        height: 50%;
+    }
+}
+
+@media (min-width: 1201px){
+.menu_left{display: flex;}
+    .menu_right{display: flex;}
+
+    .ham{display: none;}
+
+}
